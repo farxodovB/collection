@@ -162,7 +162,7 @@ function timer(respond) {
         timerSet.innerHTML = "PAUSE"
         interval = setInterval(() => {
             timerCount()
-        }, 1);
+        }, 1000);
     }else if (respond.toUpperCase() === 'PAUSE') {
         timerSet.innerHTML = "PLAY"
         clearInterval(interval)
